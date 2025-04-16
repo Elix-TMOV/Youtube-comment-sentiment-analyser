@@ -116,11 +116,10 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col p-4 justify-center items-center"
       style={{
-        backgroundImage: `url("/backgroundImage.png")`,
+        backgroundImage: `url("/backgroundImage-2.png")`,
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
-        backgroundPosition: "center",
       }}
     >
       
