@@ -1,7 +1,6 @@
 'use server'
 import axios from "axios";
 
-console.log("Youtube API Key:", process.env.YOUTUBE_DATA_API_KEY)
 const youtubeApiKey = process.env.YOUTUBE_DATA_API_KEY
 
 async function get_youtube_comm(videoId: string): Promise<string[] | null> {

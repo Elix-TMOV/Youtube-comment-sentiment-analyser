@@ -30,13 +30,14 @@ export default function Home() {
   const get_comments = async () => {
     const videoId = getVideoId(videoURl);
     setVideoId(videoId);
-    console.log(videoId)
+   
     try {
       setLoadingSentiments(true);
       const comments = videoId ? await get_youtube_comm(videoId) : [];
       setComments(comments);
       // now just get the list of comments and send them to get sentiments
       const sentiment = comments && (await get_sentiment(comments));
+      console.log(sentiment)
       setSentiments(JSON.parse(sentiment));
       setLoadingSentiments(false);
       // console.log("Sentiment:", sentiment);
