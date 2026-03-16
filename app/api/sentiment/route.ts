@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
                 ["Very Poitive", "Negative", "Negative", "Neutral"]. don't include the actual comment in it and don't include anything else just the list.
                 Here are the comments: ${texts}`;
     const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-2.5-flash",
         contents: query,
     });
     // console.log("Response:", response.text);
