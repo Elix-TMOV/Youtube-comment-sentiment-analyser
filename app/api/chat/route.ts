@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
 
 
     const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-2.5-flash",
         contents: query,
     });
     return NextResponse.json(response.text);
